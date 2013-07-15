@@ -1,0 +1,10 @@
+*.EXE
+*.exe
+*.obj
+a.out
+*.swp
+*.pyc
+.DS_Store
+test
+Debug/
+debug/
