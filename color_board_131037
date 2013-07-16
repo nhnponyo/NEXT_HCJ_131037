@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <canvas id="canvas"></canvas>
+    </header>
+  <div id='aside'>메뉴
+    <div id='pickcolor'>
+      색 고르기
+      <br>
+    <img src=http://farm4.staticflickr.com/3194/3075318035_a442c0de89.jpg width='100'>
+    </div>
+   <div>
+     펜 크기
+     <form name="pensize">0
+     <input type="range" id="pensize" value="25" max="50">50
+     </form>
+   </div>
+ 
+  <form name='펜 패턴'>
+    <p>펜 패턴</p>
+     <label>동그라미</label>
+        <input type="radio" name='pattern' value='동그라미'>
+     <label>별</label>
+        <input type="radio" name='pattern' value='별'>
+     <label>네모</label>
+        <input type="radio" name='pattern' value='네모'>
+     <label>꽃</label>
+        <input type="radio" name='pattern' value='꽃'>
+     <label>표창</label>
+        <input type="radio" name='pattern' value='표창'>
+    
+    <div id='esize'>
+      <p>지우개</p>
+         <form name="pensize">0
+            <input type="range" id="pensize" value="25" max="50">50
+         </form>
+    </div>
+    
+    <div id='undo'>되돌리기</div>
+    <div id='newcan'>새 캔버스(다 지우기)</div>
+    <div id='mkpuzzle'>퍼즐 만들기</div>
+    <div id='share'>sns에 공유
+       <button type="button" onclick="alert('shared on your sns')">facebook</button>
+       <button type="button" onclick="alert('shared on your sns')">twitter</button>
+      <button type="button" onclick="alert('shared on your sns')">myspace</button>
+       <button type="button" onclick="alert('shared on your sns')">cyworld</button>
+    </div>
+   </div>
+ </div>
+  
+</body>
+</html>
