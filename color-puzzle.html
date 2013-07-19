@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<style>
+canvas {border: 1px solid; width: 900px; height: 500px; float:left;}
+body {width:1300px;}
+header {width: 1200px;}
+#top {text-align: center;}
+#menu {border: 1px solid; float:left; width: 300px;text-align: center; height: 500px; vertical-align:middle;}
+#bottom {clear: both;}
+footer {text-align: center;}
+
+</style>
+
+<head>
+<meta charset=utf-8 />
+<title>color-board-puzzle</title>
+</head>
+
+<body>
+	<header id='top'>
+		<h1>have your own puzzle!</h1>
+	</header>
+	<section id='canvas'>
+		<canvas>
+			캔버스
+		</canvas>
+	</section>
+	<aside id='menu'>
+		<div id='button-menu'>
+			<input type = 'image' src='http://what-i-believe.com/wp-content/uploads/2012/08/paper_01.png' width='50px'>
+			<input type = 'image' src='http://cdn1.iconfinder.com/data/icons/defaulticon/icons/png/256x256/undo.png' width='50px'>
+		</div>
+		<div id='color-picker'>
+			<img src='http://farm4.staticflickr.com/3194/3075318035_a442c0de89.jpg' width='150'>
+		</div>
+		<form id='pen-size'>
+			<div>펜 크기</div>
+			0<input type="range" id="pensize" value="25" max="50">50
+		</form>
+		<form name='pen-pattern'>
+			<div>펜 패턴</div>
+			<label>동그라미</label>
+			<input type="radio" name='pattern' value='동그라미'>
+			<label>별</label>
+			<input type="radio" name='pattern' value='별'>
+			<label>네모</label>
+			<input type="radio" name='pattern' value='네모'>
+			<label>꽃</label>
+			<input type="radio" name='pattern' value='꽃'>
+			<label>표창</label>
+			<input type="radio" name='pattern' value='표창'>
+		</form>
+		<form id='eraser-size'>
+			<div>지우개</div>
+			0<input type="range" id="pensize" value="25" max="50">50
+		</form>
+		<div id='puzzle-menu'>
+			<input type = 'image' src='http://postfiles8.naver.net/20130719_295/coponyo_1374210333303MYT8g_PNG/_2013-07-19__2.04.22.png?type=w2' width='50px'>
+			<input type = 'image' src='http://postfiles16.naver.net/20130719_223/coponyo_1374215366478ipFDH_PNG/icon.png?type=w2' width='50px'>
+			<input type = 'image' src='http://asset1.cbsistatic.com/cnwk.1d/i/tim2/2013/05/09/PrintIconX.png' width='50px'>
+		</div>
+	</aside>
+	<footer id='bottom'>
+		<div id='sns-share'><div>sns에 공유하기</div>
+			<button type="button" onclick="alert('shared on your sns')">facebook</button>
+			<button type="button" onclick="alert('shared on your sns')">twitter</button>
+			<button type="button" onclick="alert('shared on your sns')">myspace</button>
+			<button type="button" onclick="alert('shared on your sns')">cyworld</button>
+		</div>
+		<div id='intro'>made by nhnnext</div>
+	</footer>
+</body>
+</html>
